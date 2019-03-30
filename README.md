@@ -1,6 +1,6 @@
 # Ado.net
 
-Présentation du projet: le but est de faire une connection à la base de donnée , Exécuter des requêtas de base puis remplir un DataSet a partir de la requete et répercuter les changements dans la base de données (en mode déconnecté) et pour finir lire de manière séquentielle les lignes d'une table(en mode connecté).
+Présentation du projet: le but est de faire une connection à la base de donnée , Exécuter des requêtes de base puis remplir un DataSet a partir de la requête et répercuter les changements dans la base de données (en mode déconnecté) et pour finir lire de manière séquentielle les lignes d'une table(en mode connecté).
 
 Les outils mis en oeuvre :
 
