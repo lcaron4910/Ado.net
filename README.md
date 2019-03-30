@@ -19,7 +19,7 @@ le développement  tourne autour de 2 grandes étapes
 |fenêtre fille|c#|Windows Form|
 
 ## connection ##
-// chaîne de caractères de connexion
+'''cs// chaîne de caractères de connexion
 string sCnx = // chaîne de caractères de connexion
 string sCnx =
 "server=localhost;uid=root;database=tennis;port=3306;pwd=igjjr";
@@ -32,7 +32,7 @@ Console.WriteLine("connexion réussie");
 }
 catch (Exception e) {
 Console.WriteLine("erreur connexion " + e.Message.ToString());
-}
+}'''
 
 ## COMMANDE ##
 /* déclarer la requête */
