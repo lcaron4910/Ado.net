@@ -15,7 +15,9 @@ Les outils mis en oeuvre :
 * git.
 * Visual studio.
 * Sql
-
+## --Schemas de la démarche Ado.net-- ##
+![AdoNet2.png](http://image.noelshack.com/fichiers/2019/13/6/1553957519-capture-png555.png)
+## --Réalisation-- ##
 ### Connection ###
 ```cs
 // chaîne de caractères de connexion
