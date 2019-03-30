@@ -8,16 +8,6 @@ Les outils mis en oeuvre :
 * Visual studio.
 * Sql
 
-le développement  tourne autour de 2 grandes étapes
-
-1.La fenêtre principale(mère) qui est crée par défaut.
-2.création de la fenêtre fille.
-
-|**développement**|**langages**|**technique de programmation**|
-|-----------------|------------|------------------------------|
-|fenêtre principal|c#|Windows Form|
-|fenêtre fille|c#|Windows Form|
-
 ## connection ##
 ```cs
 // chaîne de caractères de connexion
@@ -64,16 +54,14 @@ Cmd.ExecuteScalar();
 
 ## Parcourir un jeu d'enregistrements ##
 ```cs
-/* parcourir le jeu d'enregistrements, affichage de la
-2ème et 3ème colonnes de la table joueur */
+/* parcourir le jeu d'enregistrements, affichage de la 2ème et 3ème colonnes de la table joueur */
 Console.WriteLine();
 while (Rdr.Read()) {
 // avec le numéro de la colonne
 Console.WriteLine(Rdr.GetString(1) + " " +
 Rdr.GetString(2));
 // avec le nom de la colonne
-Console.WriteLine(Rdr[« NomJoueur"].ToStri
-ng() + " " + Rdr[« Prenom"].ToString()); }
+Console.WriteLine(Rdr[« NomJoueur"].ToString() + " " + Rdr[« Prenom"].ToString()); }
 ```
 ## Fermeture du reader et connection ##
 ```cs
