@@ -19,7 +19,8 @@ le développement  tourne autour de 2 grandes étapes
 |fenêtre fille|c#|Windows Form|
 
 ## connection ##
-'''cs// chaîne de caractères de connexion
+```cs
+// chaîne de caractères de connexion
 string sCnx = // chaîne de caractères de connexion
 string sCnx =
 "server=localhost;uid=root;database=tennis;port=3306;pwd=igjjr";
@@ -32,17 +33,19 @@ Console.WriteLine("connexion réussie");
 }
 catch (Exception e) {
 Console.WriteLine("erreur connexion " + e.Message.ToString());
-}'''
+}
+```
 
 ## COMMANDE ##
+```cs
 /* déclarer la requête */
 string requete = "select * from joueur";
 /* créer la commande */
 MySqlCommand Cmd = new
 MySqlCommand(requete, Cnx);
-
+```
 ## Execution de le requête ##
-
+```cs
 //création d'un data reader pour executer la requête
 //et obtenir le jeu d'enregistrements
 string req = "select * from joueur";
@@ -56,13 +59,11 @@ Cmd.ExecuteNonQuery();
 //requêtes ne renvoyant qu’un seul résultat
 req = " select count(*) from joueur ";
 Cmd.ExecuteScalar();
+```
 
-
-
-![CaptureMere.png](http://image.noelshack.com/fichiers/2018/47/7/1543155640-capturemere.png)
 
 ## Parcourir un jeu d'enregistrements ##
-
+```cs
 /* parcourir le jeu d'enregistrements, affichage de la
 2ème et 3ème colonnes de la table joueur */
 Console.WriteLine();
@@ -73,16 +74,18 @@ Rdr.GetString(2));
 // avec le nom de la colonne
 Console.WriteLine(Rdr[« NomJoueur"].ToStri
 ng() + " " + Rdr[« Prenom"].ToString()); }
-
+```
 ## Fermeture du reader et connection ##
+```cs
 // fermeture du reader
 Rdr.Close();
 /* fermer la connexion */
 Cnx.Close();
+```
 
-![CaptureFille.png](http://image.noelshack.com/fichiers/2018/47/7/1543155954-capturefille.png)
 
 ## Utilisation de paramètre dans une requête ##
+```cs
 sCmd = "INSERT INTO joueur (NumLicence,NomJoueur, Prenom)
 VALUES (@numL,@nomJ, @prenom)";
 SqlConnection Cnx = new SqlConnection(sCnx);
@@ -96,3 +99,4 @@ Cmd.Parameters["@numL"]=11;
 Cmd.Parameters["@nomJ"]= "Nadal";
 nLignesAffectées = (int)Cmd.ExecuteNonQuery();
 Cnx.Close();
+```
