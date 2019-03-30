@@ -1,14 +1,14 @@
 # Ado.net #
 
-Présentation du projet: le but est de faire une connection à la base de donnée , Exécuter des requêtes de base puis remplir un DataSet a partir de la requête et répercuter les changements dans la base de données (en mode déconnecté) et pour finir lire de manière séquentielle les lignes d'une table(en mode connecté).
+Présentation du projet: le but est de faire une connection à la base de donnée , Exécuter des requêtes de base puis remplir un DataSet a partir de la requête et répercuter les changements dans la base de données (en mode déconnecté) et pour finir lire de manière séquentielle les lignes d'une table (en mode connecté).
 
 le développement  tourne autour de 3 grandes parties:
 
-1.La connexion
-2.La commande
-3.Exécution de la commande
-4.Exploitation du résultat de la commande
-5.Fermeture de la connexion
+1. La connexion
+2. La commande
+3. Exécution de la commande
+4. Exploitation du résultat de la commande
+5. Fermeture de la connexion
 
 Les outils mis en oeuvre :
 
