@@ -16,7 +16,7 @@ Les outils mis en oeuvre :
 * Visual studio.
 * Sql
 
-## connection ##
+### connection ###
 ```cs
 // chaîne de caractères de connexion
 string sCnx = // chaîne de caractères de connexion
