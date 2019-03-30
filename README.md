@@ -16,7 +16,7 @@ Les outils mis en oeuvre :
 * Visual studio.
 * Sql
 
-### connection ###
+### Connection ###
 ```cs
 // chaîne de caractères de connexion
 string sCnx = // chaîne de caractères de connexion
@@ -34,7 +34,7 @@ Console.WriteLine("erreur connexion " + e.Message.ToString());
 }
 ```
 
-## COMMANDE ##
+### Commande ###
 ```cs
 /* déclarer la requête */
 string requete = "select * from joueur";
@@ -42,7 +42,7 @@ string requete = "select * from joueur";
 MySqlCommand Cmd = new
 MySqlCommand(requete, Cnx);
 ```
-## Execution de le requête ##
+### Execution de le requête ###
 ```cs
 //création d'un data reader pour executer la requête
 //et obtenir le jeu d'enregistrements
@@ -60,7 +60,7 @@ Cmd.ExecuteScalar();
 ```
 
 
-## Parcourir un jeu d'enregistrements ##
+### Parcourir un jeu d'enregistrements ###
 ```cs
 /* parcourir le jeu d'enregistrements, affichage de la 2ème et 3ème colonnes de la table joueur */
 Console.WriteLine();
@@ -71,7 +71,7 @@ Rdr.GetString(2));
 // avec le nom de la colonne
 Console.WriteLine(Rdr[« NomJoueur"].ToString() + " " + Rdr[« Prenom"].ToString()); }
 ```
-## Fermeture du reader et connection ##
+### Fermeture du reader et connection ###
 ```cs
 // fermeture du reader
 Rdr.Close();
@@ -80,7 +80,7 @@ Cnx.Close();
 ```
 
 
-## Utilisation de paramètre dans une requête ##
+### Utilisation de paramètre dans une requête ###
 ```cs
 sCmd = "INSERT INTO joueur (NumLicence,NomJoueur, Prenom) VALUES (@numL,@nomJ, @prenom)";
 SqlConnection Cnx = new SqlConnection(sCnx);
@@ -96,7 +96,7 @@ nLignesAffectées = (int)Cmd.ExecuteNonQuery();
 Cnx.Close();
 ```
 
-## exemple pour illustrer ##
+### exemple pour illustrer ###
 ```cs
 public List<string> RepartitionAnniversaireParMois()
         {
@@ -123,5 +123,5 @@ public List<string> RepartitionAnniversaireParMois()
             return repartition;
         }
 ```
-Resultat:
+##### Resultat #####
 ![AdoNet.png](http://image.noelshack.com/fichiers/2019/13/6/1553956476-capture.png)
