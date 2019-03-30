@@ -74,8 +74,7 @@ Cnx.Close();
 
 ## Utilisation de paramètre dans une requête ##
 ```cs
-sCmd = "INSERT INTO joueur (NumLicence,NomJoueur, Prenom)
-VALUES (@numL,@nomJ, @prenom)";
+sCmd = "INSERT INTO joueur (NumLicence,NomJoueur, Prenom) VALUES (@numL,@nomJ, @prenom)";
 SqlConnection Cnx = new SqlConnection(sCnx);
 Cnx.Open();
 SqlCommand Cmd = new SqlCommand();
