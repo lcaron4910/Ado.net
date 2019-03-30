@@ -2,7 +2,7 @@
 
 Présentation du projet: le but est de faire une connection à la base de donnée , Exécuter des requêtes de base puis remplir un DataSet a partir de la requête et répercuter les changements dans la base de données (en mode déconnecté) et pour finir lire de manière séquentielle les lignes d'une table(en mode connecté).
 
-le développement  tourne autour de 3 grandes parties
+le développement  tourne autour de 3 grandes parties:
 
 1.La connexion
 2.La commande
@@ -124,4 +124,4 @@ public List<string> RepartitionAnniversaireParMois()
         }
 ```
 Resultat:
-http://image.noelshack.com/fichiers/2019/13/6/1553956476-capture.png
+![AdoNet.png](http://image.noelshack.com/fichiers/2019/13/6/1553956476-capture.png)
